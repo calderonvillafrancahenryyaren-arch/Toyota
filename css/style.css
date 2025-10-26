@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap");
+
+
+.bbh-sans-hegarty-regular {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(244, 247, 246);
+}
+
+/* header */
+
+
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(244, 247, 246);
+  border-bottom: 3px solid black;
+}
+
+h1 {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.a1 {
+  color: black;
+}
+
+#botones {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  padding: 0 1rem;
+
+}
+
+.encuentra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30rem;
+
+}
+
+.botones-menu {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+/* main */
+.imgPortada {
+  background-color: black;
+
+}
+
+.promocion {
+  padding: 2rem 21rem;
+}
+
+.caja {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem 22rem;
+}
+
+.contenido {
+  padding: 35px 2rem;
+}
+
+.parrafoM {
+  padding: 17px 0;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  width: 60%;
+  height: 40px;
+  border-radius: 9999px;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 5%;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+
+}
+
+
+/* formulario */
+#formulario {
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modulo {
+  display: flex;
+  gap: 15px;
+}
+
+.btnModulo button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  border: none;
+  height: 35px;
+  border-radius: 9999px;
+  padding: 10px 5rem;
+  justify-content: center;
+}
+
+.btnModulo {
+  display: flex;
+  justify-content: center;
+  margin: 18px;
+}
+
+
+/* footer */
+footer {
+  background-color: rgb(22, 21, 21);
+
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.lista li {
+  color: #ffffff;
+  padding: 3px;
+}
+
+.imagenf {
+  padding: 3rem 0;
+}
+
+.h-4 {
+  color: #ffffff;
+  padding: 3px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* boton flotante */
+
+#chat-toggle-button {
+  position: fixed;
+  bottom: 60px;
+  right: 1790px;
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+
+}
+
+
+
+#chat-widget {
+  position: fixed;
+  justify-items: center;
+  bottom: 100px;
+  right: 1500px;
+  width: 320px;
+  height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  overflow: hidden;
+  visibility: hidden;
+
+
+}
+
+
+
+
+
+#chat-widget.open {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.chat-header {
+  background-color: green;
+  color: white;
+  padding: 11px 15px;
+  font-weight: bold;
+}
+
+
+
+.chat-body {
+  padding: 15px;
+  height: calc(100% - 45px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+
+.chat-input input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid green;
+  border-radius: 4px;
+}
